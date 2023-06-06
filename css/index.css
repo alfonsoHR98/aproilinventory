@@ -1,0 +1,91 @@
+:root {
+  --color-primario-1:#216784;
+  --color-primario-2:#19314E;
+  --color-primario-3:#375671;
+  --color-primario-4:#DBF3F8;
+  --color-primario-5:#D2DADF;
+  --color-primario-6:#EDCFAA;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: rgb(2,0,36);
+background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(154,0,59,1) 75%, rgba(198,0,66,1) 87%, rgba(255,0,74,1) 100%);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login {
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+  height: 30%;
+  width: 300px;
+  box-shadow:
+  0px 0px 12.5px rgba(0, 0, 0, 0.09),
+  0px 0px 34.7px rgba(0, 0, 0, 0.042),
+  0px 0px 83.5px rgba(0, 0, 0, 0.027),
+  0px 0px 277px rgba(0, 0, 0, 0.016);
+}
+
+.titulo {
+  text-align: center;
+  font-weight: 700;
+  color: white;
+  font-size: 30px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  color: white;
+  font-size: 15px;
+}
+
+.form-box{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding-bottom: 25px;
+}
+
+.box {
+  height: 20px;
+  border-radius: 4px;
+  border: .5px white solid;
+}
+
+.btn {
+  width: 50%;
+  height: 30px;
+  border-radius: 10px;
+  background: transparent;
+  color: white;
+  border: .5px white solid;
+}
+
+.btn:hover {
+  background: rgba(154,0,59,1);
+  animation:shadow-drop-center 0.2s linear both
+} 
+
+@keyframes shadow-drop-center{
+  0%{
+    box-shadow:0 0 0 0 transparent
+  }
+  100%{
+    box-shadow:0 0 20px 0 rgba(255,255,255,.55)
+  }
+}
