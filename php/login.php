@@ -15,7 +15,7 @@
   if (mysqli_num_rows($result) > 0) {
     while ($fila = mysqli_fetch_assoc($result)) {
       if ($fila['usuario'] == $usuario && $fila['password'] == $password) {
-        header("Location: ../dashboard.html");
+        header("Location: ./dashboard.php");
         exit();
       }else{
         header("Location: ../index.html");
