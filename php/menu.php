@@ -9,7 +9,7 @@
         <a href="#">Productos</a>
         <ul class="menu_vertical">
           <li><a href="../html/registrarProducto.php">Registrar producto</a></li>
-          <li><a href="#">Eliminar producto</a></li>
+          <li><a href="../html/eliminarProducto.php">Eliminar producto</a></li>
           <li><a href="#">Modificar producto</a></li>
         </ul>
       </li>
