@@ -16,8 +16,8 @@
       <li>
         <a href="#">Clientes</a>
         <ul class="menu_vertical">
-          <li><a href="#">Registrar cliente</a></li>
-          <li><a href="#">Eliminar cliente</a></li>
+          <li><a href="../html/registrarCliente.php">Registrar cliente</a></li>
+          <li><a href="../html/configuracionCLIENTES.php">Eliminar cliente</a></li>
           <li><a href="#">Modificar cliente</a></li>
         </ul>
       </li>
