@@ -7,6 +7,10 @@
   margin: 60px auto;
 }
 
+.chill-1 {
+  width: 30%;
+}
+
 .chill-1, .chill-2 {
   display: flex;
   flex-direction: column;
@@ -14,7 +18,7 @@
 }
 
 .chill-2 {
-  width: 50%;
+  width: 70%;
 }
 
 h1 {
@@ -39,32 +43,22 @@ form {
   font-weight: 400;
 }
 
-.formulario form #nombre, #direccion, #rfc, #telefono, #correo  {
-  width: 45%;
-  font-size: 1em;
-  font-weight: 400;
-  border: none;
-  border-bottom: solid 2px #d60000;outline: none;
-}
-
-.formulario form #nombre:focus, #direccion:focus, #rfc:focus, #telefono:focus, #correo:focus{
-  outline: none;
-}
-
 .button {
   border: solid 2px #d60000;
   font-size: 1em;
   font-weight: 400;
   outline: none;
-  padding: 15px 10px 15px 10px;
+  padding: 10px 5px 10px 5px;
   margin-top: 15px;
 }
 
 .btn {
+  padding: 10px 5px 10px 5px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 table {
