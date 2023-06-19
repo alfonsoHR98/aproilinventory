@@ -1,14 +1,28 @@
 <?php
-    $option = $_POST['option'];
-    $updatedData = getUpdatedData($option);
+    include '../conn.php';
 
-    $html = '';
-    foreach ($updatedData as $row){
-        $html .= "<tr>";
-        foreach($row as $cell){
-            $html .= "<td>{'HOLA'}</td>";
+    //inyección sql
+    $sql = "SELECT * from productos";
+  
+    //se extrae la información de la base de datos con la inyección sql necesaria
+    $result = mysqli_query($conn, $sql);
+  
+    if($result = $conn->query($sql)) {
+        while ($row = $result->fetch_assoc()){
+          $id = $row["id_cliente"];
+          $nombre = $row["nombre"];
+          $rfc = $row["rfc"];
+          $correoele = $row["correo"];
+          echo "
+            <tr>
+              <td>$id</td>
+              <td>$nombre</td>
+              <td>$rfc</td>
+              <td>$correoele</td>
+            </tr>
+          ";
         }
-        $html .= "</tr>";
-    }
-    echo $html;
+        $result->free();
+        $conn->close();
+      }
 ?>
